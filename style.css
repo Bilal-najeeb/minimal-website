@@ -1,0 +1,254 @@
+
+/* Essentials */
+
+:root {
+    --main-color: #f8b281;
+    --secondary-color: #1b1b1b;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+html, body{
+    height: 100%;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem 0rem;
+}
+
+h3{
+    font-size: 1.25rem;
+    line-height: 125%;
+}
+
+
+
+
+@font-face {
+    font-family: "orgonite";
+    src: url("/assets/stone\ orgonite.woff");
+}
+
+/* Navigation bar */
+
+.links{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    list-style: none;
+    transform: translateX(100%);
+}
+
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo h1{
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    font-family: "orgonite", sans-serif;
+}
+
+.logo img{
+    width: 2rem;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav svg{
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Hero Section */
+
+.front-page{
+    min-height: 100vh;
+    color: white;
+    
+    
+}
+
+section{
+    padding: 5%;
+}
+
+.heroimg{
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    
+}
+
+.overlay{
+    position: absolute;
+    z-index: -1;
+    
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #1b1b1b70;
+}
+
+.selling-point{
+    margin-top: 20vh;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.295);
+    text-align: center;
+}
+
+.selling-point h3 {
+
+    font-family: sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.295);
+
+}
+
+
+/* Buttons */
+
+.main{ 
+    background-color: var(--main-color);
+}
+
+.sec{
+
+    background-color: var(--secondary-color);
+    color: white;
+
+}
+
+.ctas{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cta{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.205);
+    margin: 1rem;
+}
+
+
+
+/* Next Section */
+
+
+.pilates,.yoga,.meditation{
+    position: relative;
+}
+
+.classes-description{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.videos h3{
+    position: absolute;
+    font-size: 4rem;
+    color: wheat;
+    text-shadow: 0px 10px 24px black;
+    bottom: 10%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%,-10%);
+}
+
+.videos video{
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    
+}
+
+/* About Us Section */
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.about-us h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-us p{
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+
+.aboutimg{
+    width: 100%;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+body{
+    padding:5%;
+}
+
+.videos{
+    display: flex;
+    gap: 2rem;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutimg{
+    width: 30%;
+}
+
+}
